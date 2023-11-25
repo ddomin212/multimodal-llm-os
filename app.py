@@ -2,9 +2,10 @@ import streamlit as st
 from utils import download_video, call_video_llama, generate_music, call_text_llama
 import subprocess
 import sys
+import logging
 
 def fix_gradio_lib():
-    print(sys.path)
+    logging.warning(sys.path)
     subprocess.run(["cp", "gradio_replace/serializing.py", f"{sys.path[-1]}/gradio_client/serializing.py"])
     subprocess.run(["cp", "gradio_replace/utils.py", f"{sys.path[-1]}/gradio_client/utils.py"])
 
