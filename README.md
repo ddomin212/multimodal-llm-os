@@ -8,5 +8,7 @@ A simple app that takes in a youtube short link, uses LLaVA to process what happ
 
 ### Credits
 LLaVA: https://paperswithcode.com/paper/video-llava-learning-united-visual-1
+
 Mustango: https://paperswithcode.com/paper/mustango-toward-controllable-text-to-music
+
 Llama2: https://ai.meta.com/llama/
