@@ -5,7 +5,7 @@ import sys
 import logging
 
 def fix_gradio_lib():
-    logging.warning(sys.path)
+    subprocess.run(["whoami"])
     subprocess.run(["cp", "gradio_replace/serializing.py", f"{sys.path[-1]}/gradio_client/serializing.py"])
     subprocess.run(["cp", "gradio_replace/utils.py", f"{sys.path[-1]}/gradio_client/utils.py"])
 
