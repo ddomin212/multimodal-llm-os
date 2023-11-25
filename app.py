@@ -4,7 +4,7 @@ import subprocess
 import sys
 
 def fix_gradio_lib():
-    print(sys.path[-1])
+    print(sys.path)
     subprocess.run(["cp", "gradio_replace/serializing.py", f"{sys.path[-1]}/gradio_client/serializing.py"])
     subprocess.run(["cp", "gradio_replace/utils.py", f"{sys.path[-1]}/gradio_client/utils.py"])
 
